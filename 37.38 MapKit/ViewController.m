@@ -26,17 +26,20 @@
     [self.locationManager startUpdatingLocation];
     self.mapView.showsUserLocation=YES;
     //----
+    
+    //initializing
     self.isButtonForAddRoutesPushed=NO;
     self.arrayOfRoutesOverlays=[NSMutableArray new];
-    
-    
+    self.arrayOfStudentsAlreadyOnMap=[NSMutableArray new];
+    self.radiusOfSmallArea=5000;
+    self.radiusOfMiddleArea=10000;
+    self.radiusOfBigArea=15000;
+    //----
     CLLocationCoordinate2D spbCoordinate=CLLocationCoordinate2DMake(60, 30.2);
     MKCoordinateRegion initialRegion=MKCoordinateRegionMakeWithDistance(spbCoordinate, 100000, 100000);
     self.mapView.region=initialRegion;
     //[self.mapView setRegion:initialRegion animated:YES];
-    self.radiusOfSmallArea=5000;
-    self.radiusOfMiddleArea=10000;
-    self.radiusOfBigArea=15000;
+    
     
     
     self.arrayOfStudents=[NSMutableArray new];
@@ -347,19 +350,30 @@
         MKPlacemark* meetPlacemark=[[MKPlacemark alloc]initWithCoordinate:self.currentCircle.coordinate addressDictionary:nil];
         MKMapItem* meetItem=[[MKMapItem alloc]initWithPlacemark:meetPlacemark];
         request.destination=meetItem;
-        //source (student's location)
-        
+        //----end of destination
+        NSArray* sourceArray=nil;
+        if (isByButton) {
+            sourceArray=self.arrayOfStudents;
+            [self.arrayOfStudentsAlreadyOnMap removeAllObjects];
+        } else {
+            sourceArray=self.arrayOfStudentsAlreadyOnMap;
+        }
         NSMutableArray* tempArray=[[NSMutableArray alloc]init];
         MKMapPoint meetPoint = MKMapPointForCoordinate(self.currentCircle.coordinate);
-        for (NVStudent* obj in self.arrayOfStudents) {
-            //randomize probability of coming to place. If somebody is nearer to meetPoint, then he has more chances. If somebody lives far than radiusBig, he never comes.
-            MKMapPoint studentPoint = MKMapPointForCoordinate(obj.coordinate);
-            CLLocationDistance distance = MKMetersBetweenMapPoints(meetPoint, studentPoint);
-            int randomDistance=arc4random_uniform((int)self.radiusOfBigArea);
-            if (randomDistance>(self.radiusOfBigArea - distance)) {
-                continue;
+        for (NVStudent* obj in sourceArray) {
+            if (isByButton) {
+                //randomize probability of coming to place. If somebody is nearer to meetPoint, then he has more chances. If somebody lives far than radiusBig, he never comes.
+                MKMapPoint studentPoint = MKMapPointForCoordinate(obj.coordinate);
+                CLLocationDistance distance = MKMetersBetweenMapPoints(meetPoint, studentPoint);
+                int randomDistance=arc4random_uniform((int)self.radiusOfBigArea);
+                if (randomDistance>(self.radiusOfBigArea - distance)) {
+                    continue;
+                }
+                //----end of randomize probability
+                [self.arrayOfStudentsAlreadyOnMap addObject:obj];
             }
-            //end of randomize probability
+            
+            //source (student's location)
             MKPlacemark* sourcePlacemark=[[MKPlacemark alloc]initWithCoordinate:obj.coordinate addressDictionary:nil];
             MKMapItem* sourceMeet=[[MKMapItem alloc]initWithPlacemark:sourcePlacemark];
             request.source=sourceMeet;

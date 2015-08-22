@@ -46,9 +46,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField;{
+    return NO;
+}
 #pragma mark - UITableViewDataSource
-
-
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return nil;
 }

@@ -24,6 +24,7 @@
 @property (strong,nonatomic) NSDictionary *dictionaryWithAddress;
 @property (strong,nonatomic) MKCircle* currentCircle;
 @property (strong,nonatomic) NSMutableArray* arrayOfRoutesOverlays;
+@property (strong,nonatomic) NSMutableArray* arrayOfStudentsAlreadyOnMap;
 //for autoupdate geo
 @property (strong,nonatomic) CLLocationManager *locationManager;
 @property (strong,nonatomic) CLLocation *location;

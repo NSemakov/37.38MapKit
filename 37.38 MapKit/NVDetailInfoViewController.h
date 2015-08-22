@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class ViewController;
 @class NVStudent;
-@interface NVDetailInfoViewController : UITableViewController
+@interface NVDetailInfoViewController : UITableViewController <UITextFieldDelegate>
 - (IBAction)actionDone:(UIBarButtonItem *)sender;
 @property (strong,nonatomic) ViewController* delegate;
 @property (strong,nonatomic) NSMutableArray *arrayOfEducation;
