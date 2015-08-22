@@ -14,6 +14,16 @@
 		84279B371B8670F9003A02C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84279B361B8670F9003A02C3 /* Images.xcassets */; };
 		84279B3A1B8670F9003A02C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84279B381B8670F9003A02C3 /* LaunchScreen.xib */; };
 		84279B461B8670F9003A02C3 /* _7_38_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84279B451B8670F9003A02C3 /* _7_38_MapKitTests.m */; };
+		84279B501B86714E003A02C3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84279B4F1B86714E003A02C3 /* MapKit.framework */; };
+		84279B591B8680CD003A02C3 /* NVStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 84279B581B8680CD003A02C3 /* NVStudent.m */; };
+		84279B5B1B86A535003A02C3 /* woman.ico in Resources */ = {isa = PBXBuildFile; fileRef = 84279B5A1B86A535003A02C3 /* woman.ico */; };
+		84279B5D1B86A5E8003A02C3 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 84279B5C1B86A5E8003A02C3 /* female.png */; };
+		84279B5F1B86A693003A02C3 /* woman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84279B5E1B86A693003A02C3 /* woman.jpg */; };
+		84279B611B86ADF2003A02C3 /* woman1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84279B601B86ADF2003A02C3 /* woman1.jpg */; };
+		84279B631B86AE78003A02C3 /* man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84279B621B86AE78003A02C3 /* man.jpg */; };
+		84285A601B87A63100EB8514 /* NVDetailInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84285A5F1B87A63100EB8514 /* NVDetailInfoViewController.m */; };
+		84285A631B87C84700EB8514 /* NVPlaceForMeeting.m in Sources */ = {isa = PBXBuildFile; fileRef = 84285A621B87C84700EB8514 /* NVPlaceForMeeting.m */; };
+		846C877D1B87D35C00EDB532 /* Rammstein.png in Resources */ = {isa = PBXBuildFile; fileRef = 846C877C1B87D35C00EDB532 /* Rammstein.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +50,19 @@
 		84279B3F1B8670F9003A02C3 /* 37.38 MapKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "37.38 MapKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84279B441B8670F9003A02C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84279B451B8670F9003A02C3 /* _7_38_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _7_38_MapKitTests.m; sourceTree = "<group>"; };
+		84279B4F1B86714E003A02C3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84279B571B8680CD003A02C3 /* NVStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVStudent.h; sourceTree = "<group>"; };
+		84279B581B8680CD003A02C3 /* NVStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVStudent.m; sourceTree = "<group>"; };
+		84279B5A1B86A535003A02C3 /* woman.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = woman.ico; sourceTree = "<group>"; };
+		84279B5C1B86A5E8003A02C3 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		84279B5E1B86A693003A02C3 /* woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman.jpg; sourceTree = "<group>"; };
+		84279B601B86ADF2003A02C3 /* woman1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = woman1.jpg; sourceTree = "<group>"; };
+		84279B621B86AE78003A02C3 /* man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = man.jpg; sourceTree = "<group>"; };
+		84285A5E1B87A63100EB8514 /* NVDetailInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVDetailInfoViewController.h; sourceTree = "<group>"; };
+		84285A5F1B87A63100EB8514 /* NVDetailInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVDetailInfoViewController.m; sourceTree = "<group>"; };
+		84285A611B87C84700EB8514 /* NVPlaceForMeeting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPlaceForMeeting.h; sourceTree = "<group>"; };
+		84285A621B87C84700EB8514 /* NVPlaceForMeeting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPlaceForMeeting.m; sourceTree = "<group>"; };
+		846C877C1B87D35C00EDB532 /* Rammstein.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rammstein.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84279B501B86714E003A02C3 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +87,16 @@
 		84279B1D1B8670F8003A02C3 = {
 			isa = PBXGroup;
 			children = (
+				84279B4F1B86714E003A02C3 /* MapKit.framework */,
 				84279B281B8670F9003A02C3 /* 37.38 MapKit */,
 				84279B421B8670F9003A02C3 /* 37.38 MapKitTests */,
 				84279B271B8670F9003A02C3 /* Products */,
+				84279B5A1B86A535003A02C3 /* woman.ico */,
+				846C877C1B87D35C00EDB532 /* Rammstein.png */,
+				84279B5C1B86A5E8003A02C3 /* female.png */,
+				84279B5E1B86A693003A02C3 /* woman.jpg */,
+				84279B601B86ADF2003A02C3 /* woman1.jpg */,
+				84279B621B86AE78003A02C3 /* man.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +116,12 @@
 				84279B2E1B8670F9003A02C3 /* AppDelegate.m */,
 				84279B301B8670F9003A02C3 /* ViewController.h */,
 				84279B311B8670F9003A02C3 /* ViewController.m */,
+				84285A611B87C84700EB8514 /* NVPlaceForMeeting.h */,
+				84285A621B87C84700EB8514 /* NVPlaceForMeeting.m */,
+				84279B571B8680CD003A02C3 /* NVStudent.h */,
+				84279B581B8680CD003A02C3 /* NVStudent.m */,
+				84285A5E1B87A63100EB8514 /* NVDetailInfoViewController.h */,
+				84285A5F1B87A63100EB8514 /* NVDetailInfoViewController.m */,
 				84279B331B8670F9003A02C3 /* Main.storyboard */,
 				84279B361B8670F9003A02C3 /* Images.xcassets */,
 				84279B381B8670F9003A02C3 /* LaunchScreen.xib */,
@@ -163,11 +200,17 @@
 		84279B1E1B8670F8003A02C3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NV;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Admin;
 				TargetAttributes = {
 					84279B251B8670F9003A02C3 = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					84279B3E1B8670F9003A02C3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -199,8 +242,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84279B5B1B86A535003A02C3 /* woman.ico in Resources */,
 				84279B351B8670F9003A02C3 /* Main.storyboard in Resources */,
+				84279B631B86AE78003A02C3 /* man.jpg in Resources */,
+				84279B5D1B86A5E8003A02C3 /* female.png in Resources */,
+				84279B611B86ADF2003A02C3 /* woman1.jpg in Resources */,
+				846C877D1B87D35C00EDB532 /* Rammstein.png in Resources */,
 				84279B3A1B8670F9003A02C3 /* LaunchScreen.xib in Resources */,
+				84279B5F1B86A693003A02C3 /* woman.jpg in Resources */,
 				84279B371B8670F9003A02C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84279B321B8670F9003A02C3 /* ViewController.m in Sources */,
+				84285A601B87A63100EB8514 /* NVDetailInfoViewController.m in Sources */,
 				84279B2F1B8670F9003A02C3 /* AppDelegate.m in Sources */,
+				84285A631B87C84700EB8514 /* NVPlaceForMeeting.m in Sources */,
 				84279B2C1B8670F9003A02C3 /* main.m in Sources */,
+				84279B591B8680CD003A02C3 /* NVStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +470,7 @@
 				84279B4B1B8670F9003A02C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84279B4C1B8670F9003A02C3 /* Build configuration list for PBXNativeTarget "37.38 MapKitTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +479,7 @@
 				84279B4E1B8670F9003A02C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
